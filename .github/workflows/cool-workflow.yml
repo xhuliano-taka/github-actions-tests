@@ -1,0 +1,14 @@
+name: Cool Shell Commands
+
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string in the shell
+        run: echo "GitHub actions are just brilliant and so simple"
+      - name: using multiline scripts for multiple commands
+        run: |
+          node -v
+          npm -v
