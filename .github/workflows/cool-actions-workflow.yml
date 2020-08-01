@@ -6,6 +6,10 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List current dir and files in there
+        run: |
+          pwd
+          ls
       - name: Using simple and brilliant action
         id: greet
         uses: actions/hello-world-javascript-action@v1
