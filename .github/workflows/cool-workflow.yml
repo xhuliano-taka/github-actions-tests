@@ -12,3 +12,7 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: Python Commands
+        shell: python
+        run: |
+          print("Python is supercool")
