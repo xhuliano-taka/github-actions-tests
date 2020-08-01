@@ -6,10 +6,16 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List current dir and files in there
+      - name: List current dir and files in there before checkout
         run: |
           pwd
-          ls
+          ls -a
+      - name: Checkout repo into VM
+        uses: actions/checkout@v2
+      - name: List current dir and files in there after checkout
+        run: |
+          pwd
+          ls -a
       - name: Using simple and brilliant action
         id: greet
         uses: actions/hello-world-javascript-action@v1
