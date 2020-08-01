@@ -3,16 +3,16 @@ name: Cool Shell Commands
 on: [pull_request]
 
 jobs:
-  run-shell-commands:
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo a string in the shell
-        run: echo "GitHub actions are just brilliant and so simple"
-      - name: using multiline scripts for multiple commands
-        run: |
-          node -v
-          npm -v
-      - name: Python Commands
-        shell: python
-        run: |
-          print("Python is supercool")
+    run-shell-commands:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo a string in the shell
+              run: echo "GitHub actions are just brilliant and so simple"
+            - name: using multiline scripts for multiple commands
+              run: |
+                  node -v
+                  npm -v
+            - name: Python Commands
+              shell: python
+              run: |
+                  print("Python is supercool")
